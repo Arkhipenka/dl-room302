@@ -6,7 +6,7 @@
       padding-bottom: 40px;
   }
   @include lg {
-      padding-bottom: 148px;
+      padding-bottom: 150px;
   }
 
   .row {
@@ -17,20 +17,19 @@
 
   h2 {
     color: $body-bg;
-    @include lg {
-        padding: 140px 0 70px 0;
-    }
   }
 
   .address {
     justify-content: center;
-
+    ul {
+      margin-bottom: 30px;
+    }
     @include md {
         justify-content: space-between;
     }
   }
 
-  p {
+   a.icon-mail, p {
     color: $body-bg;
     font-weight: bold;
     position: relative;
@@ -38,6 +37,7 @@
     line-height: 20px;
     font-size: 18px;
     padding-bottom: 10px;
+    text-decoration: none;
 
     @include md {
         font-size: 22px;
@@ -68,7 +68,7 @@
       color: #ffffff;
       font-size: 26px;
       line-height: 43px;
-      margin: 0 12px;
+      margin: 0 24px 0 0;
       &:hover {
         color: rgba(255, 255, 255, 0.75);
         border: 2px solid rgba(255, 255, 255, 0.75);
@@ -83,13 +83,6 @@
           line-height: 66px;
           font-size: 40px;
       }
-    }
-  }
-
-  
-  .embed-responsive {
-    @include lg {
-        height: 327px;
     }
   }
 }
